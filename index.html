@@ -14,7 +14,7 @@
 
 <body>
     <!-- header section -->
-    <header class="max-w-[1171px] mx-auto w-11/12 mt-[48px] relative">
+    <header class="max-w-[1171px] mx-auto w-11/12 mt-[48px] mb-[120px] relative">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -51,7 +51,7 @@
         </div>
         <!-- banner section -->
         <div class="">
-            <div class="hero bg-base-200 bg-[url('/images/banner.png')] pt-[70px] pb-[135px] mt-8 rounded-3xl">
+            <div class="hero bg-base-200 bg-[url('.git/images/banner.png')] pt-[70px] pb-[135px] mt-8 rounded-3xl">
                 <div class="hero-content text-center">
                     <div class="">
                         <h1 class="text-6xl text-white font-extrabold ">End-to-End Travel with <br> <span
@@ -76,7 +76,7 @@
                 <!-- card one -->
                 <div
                     class="flex items-center gap-4 rounded-3xl border-b-2 border-b-solid  border-b-[#1DD100]  bg-white pl-[32px] py-[30px] md:py-[20px] lg:py-[32px] shadow-md lg:shadow-none md:shadow-none">
-                    <div class="border-2 border-dotted">
+                    <div class="border-2 border-dashed">
                         <img src="./images/people.png" alt="">
                     </div>
                     <div>
@@ -87,7 +87,7 @@
                 <!-- Card tow -->
                 <div
                     class="flex items-center gap-4  rounded-3xl border-b-2 border-b-solid  border-b-[#1DD100]  bg-white pl-[32px] py-[30px] md:py-[20px] lg:py-[32px] shadow-md lg:shadow-none md:shadow-none">
-                    <div class="border-2 border-dotted">
+                    <div class="border-2 border-dashed">
                         <img src="./images/stoppage.png" alt="">
                     </div>
                     <div>
@@ -98,7 +98,7 @@
                 <!-- card three -->
                 <div
                     class="flex items-center gap-4  rounded-3xl border-b-2 border-b-solid border-b-[#1DD100] bg-white pl-[32px] py-[30px] md:py-[20px] lg:py-[32px] shadow-md lg:shadow-none md:shadow-none">
-                    <div class="border-2 border-dotted">
+                    <div class="border-2 border-dashed">
                         <img src="./images/ticket-cupon.png" alt="">
                     </div>
                     <div>
@@ -111,9 +111,45 @@
     </header>
     <!-- header section end -->
 
-    <!-- main section -->
-    <main>
-
+    <!-- main section Start-->
+    <main class="mt-[120px] md:mt-[240px] lg:mt-[240px]">
+        <!-- Best offers for you Section -->
+        <section class="max-w-[1171px] mx-auto w-11/12 mt-[120px]">
+            <h1 class="text-[40px] text-center text-[#030712] font-bold mb-[48px]">Best offers for you</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <!-- Coupon code card one -->
+                <div class="bg-[#FFBF0F] flex items-center rounded-3xl h-[210px] md:h-[218px]  lg:h-[218px]">
+                    <div class="w-3/5 pl-10  lg:pl-[51px]">
+                        <h1 class="text-3xl lg:text-[40px] font-extrabold">15% OFF</h1>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p class="text-base font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="">
+                    <div class="w-2/5 lg:pl-[49px]">
+                        <h1 class="text-[32px] font-bold">NEW<sub>15</sub></h1>
+                        <p class="text-base font-medium text-[#03071280]">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- Coupon code card two -->
+                <div class="bg-[#F78C9C] flex items-center rounded-3xl h-[210px] md:h-[218px]  lg:h-[218px]">
+                    <div class="w-3/5 pl-10 lg:pl-[51px]">
+                        <h1 class="text-3xl lg:text-[40px] font-extrabold">20% OFF</h1>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p class="text-base font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="">
+                    <div class="w-2/5 lg:pl-[49px]">
+                        <h1 class="text-[32px] font-bold">Couple 20</h1>
+                        <p class="text-base font-medium text-[#03071280]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button id="offers-btn"
+                    class="btn mt-[62px] text-xl font-bold text-[#1DD100] border-2 border-solid border-[#1DD100] hover:border-[#1DD100] bg-[#ffff] hover:bg-[#ffff] mb-[120px]">See
+                    All Offers</button>
+            </div>
+        </section>
     </main>
     <!-- footer section -->
     <footer>
