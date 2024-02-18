@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End-to-End Travel with P Paribahan</title>
+    <!-- Link custom css -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Link  Daisy UI and Tailwind css-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="max-w-[1171px] mx-auto w-11/12 mt-[48px] relative">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="text-3xl md:text-4xl lg:text-4xl font-extrabold text-[#030712] ">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#030712B3] text-base font-medium">
+                    <li class="hover:bg-[#1DD1001A]"><a>Home</a></li>
+                    <li class="hover:bg-[#1DD1001A]"><a>About</a></li>
+                    <li class="hover:bg-[#1DD1001A]"><a>Destination</a></li>
+                    <li class="hover:bg-[#1DD1001A]"><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="btn hover:bg-[#1DD1001A] hover:border-[#1DD100] bg-[#1DD1001A] border-2 border-solid border-[#1DD100] rounded-xl text-xl font-bold text-[#1DD100]">Bus<span><img
+                            src="./images/bus-icon.png" alt=""></span></a>
+            </div>
+        </div>
+        <!-- banner section -->
+        <div class="">
+            <div class="hero bg-base-200 bg-[url('/images/banner.png')] pt-[70px] pb-[135px] mt-8 rounded-3xl">
+                <div class="hero-content text-center">
+                    <div class="">
+                        <h1 class="text-6xl text-white font-extrabold ">End-to-End Travel with <br> <span
+                                class="text-[#1DD100]">P
+                                Paribahan</span></h1>
+                        <p class="text-base font-normal text-[white] max-w-[691px] mx-auto mt-4 mb-8">Yes, you can run
+                            unit
+                            tests
+                            and view the results directly within the app.
+                            The integrated testing features allow for a streamlined .</p>
+                        <button
+                            class="btn btn-primary bg-[#1DD100] hover:bg-[#1DD100] hover:border-[#1DD100] font-raleway text-xl text-[#030712] font-bold border-[#1DD100]">Buy
+                            Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner item section  -->
+        <div class="flex justify-center">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:absolute md:bottom-0 lg:absolute lg:bottom-0 md:translate-y-1/2 lg:translate-y-1/2 w-11/12 mx-auto mt-[20px]">
+                <!-- card one -->
+                <div
+                    class="flex items-center gap-4 rounded-3xl border-b-2 border-b-solid  border-b-[#1DD100]  bg-white pl-[32px] py-[30px] md:py-[20px] lg:py-[32px] shadow-md lg:shadow-none md:shadow-none">
+                    <div class="border-2 border-dotted">
+                        <img src="./images/people.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl lg:text-4xl font-bold text-[#030712]">500K+</h1>
+                        <p class="text-base font-normal text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+                <!-- Card tow -->
+                <div
+                    class="flex items-center gap-4  rounded-3xl border-b-2 border-b-solid  border-b-[#1DD100]  bg-white pl-[32px] py-[30px] md:py-[20px] lg:py-[32px] shadow-md lg:shadow-none md:shadow-none">
+                    <div class="border-2 border-dotted">
+                        <img src="./images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl lg:text-4xl font-bold text-[#030712]">1.7 lacks</h1>
+                        <p class="text-base font-normal text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+                <!-- card three -->
+                <div
+                    class="flex items-center gap-4  rounded-3xl border-b-2 border-b-solid border-b-[#1DD100] bg-white pl-[32px] py-[30px] md:py-[20px] lg:py-[32px] shadow-md lg:shadow-none md:shadow-none">
+                    <div class="border-2 border-dotted">
+                        <img src="./images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl lg:text-4xl font-bold text-[#030712]">80K+</h1>
+                        <p class="text-base font-normal text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section -->
+    <main>
+
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
