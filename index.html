@@ -14,7 +14,8 @@
 
 <body>
     <!-- header section -->
-    <header class="max-w-[1171px] mx-auto w-11/12 mt-[48px] mb-[120px] relative">
+    <header
+        class="max-w-[1171px] mx-auto w-11/12 mt-[20px] md:mt-[30px] lg:mt-[48px] mb-[40px] md:mb-[80px] lg:mb-[120px] relative">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -33,7 +34,7 @@
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="text-3xl md:text-4xl lg:text-4xl font-extrabold text-[#030712] font-raleway">P-Ticket</a>
+                <a class="text-xl md:text-4xl lg:text-4xl font-extrabold text-[#030712] font-raleway">P-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-[#030712B3] text-base font-medium font-raleway">
@@ -51,13 +52,16 @@
         </div>
         <!-- banner section -->
         <div class="">
-            <div class="hero bg-base-200 bg-[url('./images/banner.png')] pt-[90px] pb-[180px] mt-8 rounded-3xl">
+            <div
+                class="bg-base-200 bg-[url('./images/banner.png')] bg-cover bg-center pt-[40px] lg:pt-[90px] pb-[60px] lg:pb-[180px] mt-8 rounded-3xl">
                 <div class="hero-content text-center">
                     <div class="">
                         <h1 class="text-4xl md:text-5xl lg:text-6xl text-white font-extrabold font-raleway">End-to-End
                             Travel with <br> <span class="text-[#1DD100]">P
                                 Paribahan</span></h1>
-                        <p class="text-base font-normal text-[white] max-w-[691px] mx-auto mt-4 mb-8 font-inter">Yes,
+                        <p
+                            class="text-base font-normal text-[white] max-w-[691px] mx-auto mt-4 mb-3 lg:mb-8 font-inter">
+                            Yes,
                             you can run
                             unit
                             tests
@@ -113,7 +117,7 @@
     <!-- header section end -->
 
     <!-- main section Start-->
-    <main class="mt-[120px] md:mt-[240px] lg:mt-[240px]">
+    <main class="mt-[100px]  lg:mt-[240px]">
         <!-- Best offers for you Section -->
         <section class="max-w-[1171px] mx-auto w-11/12 mt-[120px]">
             <h1 class="text-[40px] text-center text-[#030712] font-bold mb-[48px]">Best offers for you</h1>
@@ -152,7 +156,8 @@
             </div>
         </section>
         <!--  -->
-        <section class="bg-[#F7F8F8] border-t-2 border-t-solid border-t-[#1DD100] rounded-t-[88px]">
+        <section
+            class="bg-[#F7F8F8] border-t-2 border-t-solid border-t-[#1DD100] rounded-t-[88px] pb-[40px] lg:pb-[120px]">
             <h1 class="text-[40px] font-bold font-raleway text-center pt-[120px]">P.H Paribahan</h1>
             <p
                 class="text-base font-normal font-inner text-[#03071299] max-w-[736px] mx-auto text-center mt-[24px] mb-[47px]">
@@ -210,26 +215,30 @@
 
             <!-- Selected seat button here -->
 
-            <div class=" bg-[#FFFFFF] max-w-[1171px] mx-auto w-11/12 px-[32px] py-[32px] rounded-[24px] pb-[120px]">
+            <div class=" bg-[#FFFFFF] max-w-[1171px] mx-auto w-11/12 px-[32px] py-[32px] rounded-[24px] pb-[32px]">
 
                 <div class="grid gap-6 lg:gap-flex grid-cols-1 lg:grid-cols-2">
                     <!-- left side  -->
-                    <div class="pr-[30px]">
+                    <div class=" lg:pr-[30px]">
                         <div class="mb-[24px]">
                             <h1
                                 class="text-2xl font-semibold font-raleway text-[#030712] border-b-2 border-dashed pb-[23px]">
                                 Select Your Seat</h1>
                             <div class="flex justify-between pt-[19px] pb-[23px] border-b-2 border-dashed">
-                                <div class="flex items-center justify-center gap-8"><img src="./images/seat-gray.png"
-                                        alt="">
-                                    Available</div>
-                                <div class="flex items-center justify-center gap-8"><img
-                                        src="./images/seat-green-filled.png" alt=""> Selected</div>
+                                <div class="flex items-center justify-center gap-2 lg:gap-8"><img
+                                        src="./images/seat-gray.png" alt="">
+                                    <span id="available-seats">40</span> Available
+                                </div>
+                                <div class="flex items-center justify-center gap-2 lg:gap-8"><img
+                                        src="./images/seat-green-filled.png" alt=""> <span id="selected-seats">0</span>
+                                    Selected</div>
                             </div>
                         </div>
                         <div class="space-y-4">
                             <div class="flex justify-end">
-                                <button class="h-[56px] w-[90px] bg-[#F7F8F8] rounded-xl flex justify-center items-center"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
+                                <button
+                                    class="h-[56px] w-[90px] bg-[#F7F8F8] rounded-xl flex justify-center items-center"><img
+                                        src="./images/tabler-icon-steering-wheel.png" alt=""></button>
                             </div>
                             <div class="grid grid-cols-8 gap-4 text-center">
                                 <div class="rounded-xl col-span-1">
@@ -384,7 +393,7 @@
                         </div>
                     </div>
                     <!-- right side  -->
-                    <div class=" lg:border-l-2 lg:border-dashed pl-[30px]">
+                    <div class=" lg:border-l-2 lg:border-dashed lg:pl-[30px]">
                         <div>
                             <h1
                                 class="text-2xl font-semibold font-raleway text-[#030712] border-b-2 border-dashed pb-[23px]">
@@ -401,22 +410,23 @@
                                 <div class="flex justify-between pt-[16px] pb-[16px]">
                                     <p>C2</p>
                                     <p>Economoy</p>
-                                    <p><span>500 </span>Taka</p>
+                                    <p><span>550 </span>Taka</p>
                                 </div>
                                 <div class="flex justify-between pb-[16px] border-b-2 border-solid">
                                     <p>C2</p>
                                     <p>Economoy</p>
-                                    <p><span>500 </span>Taka</p>
+                                    <p><span>550 </span>Taka</p>
                                 </div>
                                 <!-- div three  -->
                                 <div class="flex justify-between pt-[16px] pb-[16px] text-base font-medium font-inter">
                                     <p>Total Price</p>
                                     <p>BDT 1100</p>
                                 </div>
-                                <div class="flex relative ">
-                                    <input class="flex-1 h-[56px] rounded-xl outline-none pl-[22px]" type="text"
-                                        placeholder="Have any copupon?"> <button
-                                        class=" text-white text-base font-semibold font-inter rounded-lg py-[8px]  px-[10px] bg-[#1DD100] absolute right-2 top-2">Apply</button>
+                                <div
+                                    class="flex flex-col md:flex-row lg:flex-row md:relative lg:relative space-y-4 md:space-y-0 lg:space-y-0 ">
+                                    <input class="lg:flex-1 py-[15px] h-[56px] w-full rounded-xl outline-none pl-[22px]"
+                                        type="text" placeholder="Have any copupon?"> <button
+                                        class=" text-white text-base font-semibold font-inter rounded-lg py-[8px]  px-[10px] bg-[#1DD100] md:absolute lg:absolute right-2 top-2">Apply</button>
                                 </div>
                                 <div class="flex justify-between pt-[24px] pb-[32px] text-base font-medium font-inter">
                                     <p>Grand Total</p>
@@ -442,10 +452,10 @@
                                 <button
                                     class="w-full py-[12px] bg-[#1DD100] rounded-2xl text-white text-xl font-extrabold font-raleway"
                                     type="submit">Next</button>
-                                    <div class="flex justify-between">
-                                        <a href="#" class="underline text-[#03071299]">Terms and Conditions</a>
-                                        <a href="#" class="underline text-[#03071299]">Cancellation Policy</a>
-                                    </div>
+                                <div class="flex justify-between">
+                                    <a href="#" class="underline text-[#03071299]">Terms and Conditions</a>
+                                    <a href="#" class="underline text-[#03071299]">Cancellation Policy</a>
+                                </div>
 
                             </div>
                         </div>
@@ -457,8 +467,30 @@
         </section>
     </main>
     <!-- footer section -->
-    <footer>
-
+    <footer class="bg-[#030712]">
+        <div class="max-w-[1171px] mx-auto w-11/12">
+            <div
+                class="text-[#FFFFFF] text-center md:text-start lg:text-start flex flex-col md:flex-row lg:flex-row flex-start items-center md:justify-between lg:justify-between lg:items-center md:space-y-0 lg:space-y-0 space-y-5 pt-[40px] md:pt[60px] lg:pt-[120px] border-b-2 border-dashed pb-[48px]">
+                <div class="space-y-4">
+                    <h1 class="text-[36px] font-extrabold font-raleway">P-Ticket</h1>
+                    <p class="max-w-[374px] text-base font-normal font-inter">P-Ticket is a digital platform to make
+                        your daily commuting better.</p>
+                </div>
+                <div class="space-y-3 lg:space-y-5">
+                    <p class="text-xl font-semibold font-raleway ">Download our app</p>
+                    <img src="./images/ply-store.png" alt="">
+                </div>
+            </div>
+            <div
+                class="text-white text-center flex md:gap-[30px] flex-col items-center md:flex-row lg:flex-row justify-between pt-[31px] pb-[40px] md:pb-[60px] lg:pb-[110px] md:space-y-0 lg:space-y-0 space-y-5">
+                <p> &copy; all rights reserved, P-Ticket services limited.2024</p>
+                <div class="space-x-4">
+                    <a href="">Terms & condition</a>
+                    <a href="">Return & refund policy</a>
+                    <a href="">Privacy policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
