@@ -144,7 +144,7 @@
                     </div>
                     <img src="./images/cupon-devider.png" alt="">
                     <div class="w-2/5 lg:pl-[49px] font-raleway">
-                        <h1 class="text-[32px] font-bold">Couple 20</h1>
+                        <h1 class="text-[32px] font-bold">Couple<sub>20</sub> </h1>
                         <p class="text-base font-medium text-[#03071280]">Coupon Code</p>
                     </div>
                 </div>
@@ -408,29 +408,30 @@
                                 <div
                                     class="flex justify-between text-base font-medium font-inter pb-[15px] border-b-2 border-dashed">
                                     <p>seat <span id="total-select-seat"
-                                            class="px-2 bg-[#1DD100] rounded-md text-white">2</span></p>
+                                            class="px-2 bg-[#1DD100] rounded-md text-white">0</span></p>
                                     <p>class</p>
                                     <p>Price</p>
                                 </div>
                                 <!-- div two  -->
                                 <div class="flex justify-between pt-[16px] pb-[16px]">
                                 </div>
-                                <div id="seat-name" class="flex justify-between pb-[16px] border-b-2 border-solid">
-                                </div>
+                                <ul id="seat-name">
+
+                                </ul>
                                 <!-- div three  -->
                                 <div class="flex justify-between pt-[16px] pb-[16px] text-base font-medium font-inter">
                                     <p>Total Price</p>
                                     <p>BDT <span id="total-price">0</span></p>
                                 </div>
-                                <div
+                                <div id="input-container"
                                     class="flex flex-col md:flex-row lg:flex-row md:relative lg:relative space-y-4 md:space-y-0 lg:space-y-0 ">
-                                    <input class="lg:flex-1 py-[15px] h-[56px] w-full rounded-xl outline-none pl-[22px]"
-                                        type="text" placeholder="Have any copupon?"> <button
+                                    <input id="input-field" class="lg:flex-1 py-[15px] h-[56px] w-full rounded-xl outline-none pl-[22px]"
+                                        type="text" placeholder="Have any coupon?"> <button id="coupon-btn"
                                         class=" text-white text-base font-semibold font-inter rounded-lg py-[8px]  px-[10px] bg-[#1DD100] md:absolute lg:absolute right-2 top-2">Apply</button>
                                 </div>
                                 <div class="flex justify-between pt-[24px] pb-[32px] text-base font-medium font-inter">
                                     <p>Grand Total</p>
-                                    <p>BDT 1100</p>
+                                    <p>BDT <span id="grand-total-price">0</span></p>
                                 </div>
                             </div>
                             <form class="mt-[24px] space-y-6">
