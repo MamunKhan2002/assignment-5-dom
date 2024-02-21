@@ -1,3 +1,9 @@
+document.getElementById("buy-ticket").addEventListener("click", function () {
+    const targetSection = document.getElementById("ticket-price-per");
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+})
+
+
 //  Offers button clicked js 
 
 document.getElementById("offers-btn").addEventListener("click", function () {
@@ -7,13 +13,18 @@ document.getElementById("offers-btn").addEventListener("click", function () {
 
 
 // seats button section functionality is here
-
-const seats = document.getElementsByClassName("seats");
 let seatCount = 0;
 let totalSeat = 40;
+
+const seats = document.getElementsByClassName("seats");
 let clickCount = 0;
 for (const seat of seats) {
     seat.addEventListener("click", function btnClick() {
+        clickCount = clickCount + 1;
+        if (clickCount >= 5) {
+            alert("More than 4 buttons have been clicked.");
+            seat.classList.setAttribute('disabled', true);
+        }
         // Remove the click event listener
         if (!seat.disabled) {
             seat.removeEventListener('click', btnClick);
@@ -52,15 +63,7 @@ for (const seat of seats) {
         const totalPrice = parseInt(totalPriceText);
         getInnerTextById("total-price", totalPrice + parseInt(perSeatPrice))
 
-        // grand Total price Calculations is here.
         setTotalGrandPriceElementById("grand-total-price", seatPrice);
-        // console.log(grandTotalPrice);
-
-        // const grandTotalPriceText = document.getElementById("grand-total-price").innerText;
-        // const grandTotalPrice = parseInt(grandTotalPriceText);
-        // const grandPrice = grandTotalPrice + parseInt(perSeatPrice);
-        // getInnerTextById("grand-total-price", grandPrice)
-        // console.log(grandTotalPrice);
     })
 }
 
@@ -92,4 +95,21 @@ document.getElementById("coupon-btn").addEventListener("click", function (event)
     }
 
 })
+
+let modal = document.getElementById('modalOpen');
+const sections = document.getElementsByClassName("section")
+function modalOpen() {
+    for (const sec of sections) {
+        sec.classList.add("hidden")
+    }
+    modal.classList.remove('hidden');
+}
+
+document.getElementById("continue").addEventListener("click", function () {
+    for (const sec of sections) {
+        sec.classList.remove("hidden")
+    }
+    modal.classList.add('hidden');
+});
+
 
